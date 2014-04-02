@@ -21,3 +21,14 @@ proguard-project.txt
 build.xml
 project.properties
 weiciyuan.iml
+
+# my
+.gradle/
+build/
+gen/
+gradle/
+gradlew
+gradlew.bat
+libs/libs.iml
+libs/showcaseviewlibrary/build/
+libs/slidingmenulibrary/build/

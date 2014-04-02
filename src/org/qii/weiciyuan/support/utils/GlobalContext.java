@@ -1,19 +1,5 @@
 package org.qii.weiciyuan.support.utils;
 
-import com.crashlytics.android.Crashlytics;
-
-import org.qii.weiciyuan.R;
-import org.qii.weiciyuan.bean.AccountBean;
-import org.qii.weiciyuan.bean.GroupListBean;
-import org.qii.weiciyuan.bean.UserBean;
-import org.qii.weiciyuan.bean.android.MusicInfo;
-import org.qii.weiciyuan.support.crashmanager.CrashManager;
-import org.qii.weiciyuan.support.crashmanager.CrashManagerConstants;
-import org.qii.weiciyuan.support.database.AccountDBTask;
-import org.qii.weiciyuan.support.database.GroupDBTask;
-import org.qii.weiciyuan.support.settinghelper.SettingUtility;
-import org.qii.weiciyuan.support.smileypicker.SmileyMap;
-
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.Application;
@@ -26,6 +12,18 @@ import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.LruCache;
 import android.view.Display;
+
+import org.qii.weiciyuan.R;
+import org.qii.weiciyuan.bean.AccountBean;
+import org.qii.weiciyuan.bean.GroupListBean;
+import org.qii.weiciyuan.bean.UserBean;
+import org.qii.weiciyuan.bean.android.MusicInfo;
+import org.qii.weiciyuan.support.crashmanager.CrashManager;
+import org.qii.weiciyuan.support.crashmanager.CrashManagerConstants;
+import org.qii.weiciyuan.support.database.AccountDBTask;
+import org.qii.weiciyuan.support.database.GroupDBTask;
+import org.qii.weiciyuan.support.settinghelper.SettingUtility;
+import org.qii.weiciyuan.support.smileypicker.SmileyMap;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -78,7 +76,7 @@ public final class GlobalContext extends Application {
         CrashManagerConstants.loadFromContext(this);
         CrashManager.registerHandler();
         if (Utility.isCertificateFingerprintCorrect(this)) {
-            Crashlytics.start(this);
+//            Crashlytics.start(this);
         }
     }
 
