@@ -88,7 +88,7 @@ public class StatusSingleChoiceModeListener implements ActionMode.Callback {
             inflater.inflate(R.menu.contextual_menu_fragment_status_listview, menu);
         }
 
-        mode.setTitle(bean.getUser().getScreen_name());
+       // mode.setTitle(bean.getUser().getScreen_name());
 
         //fuck sina weibo
 //        MenuItem favItem = menu.findItem(R.id.menu_fav);
